@@ -1,0 +1,30 @@
+h2, h3, h4, h5, h6, p{
+    font-family: 'Poppins', sans-serif;
+    color: white;}
+
+h1{
+    font-family: 'Noto Serif Display', serif;
+    color: white;}
+
+a{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;}
+
+a:hover{
+    color:white;
+}
+
+.category{
+    color:dimgray;
+}
+
+.windowsize {
+    height: 75vh;
+    overflow: auto;
+}
+
+.fondoarte {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(img/bgbanner.jpeg);
+    background-size: cover;
+}

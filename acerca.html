@@ -16,6 +16,7 @@
 
 <!-- Barra -->        
         
+        
         <div class="container">  
             <header class="row">
                 
@@ -42,47 +43,32 @@
 
 <!-- Intro -->
                 
-            <div class="windowsize fondoarte row align-items-center text-center">
+            <div class="fondoarte row align-items-center text-center" style="height: 30vh;">
                 <div style="">
                     <h1 class="mt-5">ReferArt</h1>
                     <h4 class="mb-4">Sólo referencias de arte, así de simple.</h4>
                     <br>
                 </div>
             </div>
-        
-        
 
 <!-- Aquí van a ir los elementos del script de la tabla -->     
         
-        <div class="container-fluid">
+        <div class="container">
 
             <main class="row text-center py-5">
+                
+                <h3>¿Por qué?</h1>
+                <p class="lead pb-5">ReferArt nace de la necesidad que tengo de ver arte en un sólo lugar.</p>
+                
+                <h3>¿Quién eres?</h1>
+                <p class="lead pb-5">Soy un estudiante de diseño a quien le gusta el arte.</p>
+                
+                <h3>¿Tienes redes sociales?</h1>
+                <p class="lead pb-5">No, solo disfruta del arte.</p>
+                
             </main>
             
         </div>
-
-<!-- Comienza la generación de contenido según la tabla -->
-
-            <div class="row">
-                 <script>
-                    fetch("https://sheet.best/api/sheets/d6badc79-ffd5-4dae-bcf2-9c334ae3062a")
-                        .then((response) => response.json())
-                        .then((datos) => {
-                            console.log(datos);
-                            var aqui = document.getElementsByTagName("main")[0];
-                            datos.reverse();
-                            datos.forEach((d) => {
-
-                                foto_id = d.Imagen.split("=").pop();
-                                foto_util = "https://drive.google.com/uc?export=view&id=" + foto_id;
-                                aqui.innerHTML += 
-                                    
-                                '<div class="col-4 mb-2"><h4 class="text-white pt-4">' + d.Nombre + '</h2><a href="' + d.Link + '"><img src="' + foto_util + '" class="w-100 mx-auto my-3 shadow img-rounded"></a><p class="text-white h6">' + d.Autor + '</p><p class="category pb-4">' + d.Categoria + '</p></div>';
-
-                            });
-                        })
-                </script>
-            </div>
     
 
         <div class="container">
